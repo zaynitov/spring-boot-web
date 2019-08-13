@@ -29,6 +29,9 @@ public class WelcomeController {
         model.addAttribute("tasks", tasks);
         String s = processinHuman.processHuman();
         System.out.println("s = " + s);
+        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder append = stringBuilder.append("123").append("\n").append("1222");
+        String s1 = append.toString();
         return "welcome"; //view
     }
 
